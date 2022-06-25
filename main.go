@@ -31,7 +31,7 @@ func main() {
 	os.Mkdir("docs/data", 0777)
 
 	for id, ft := range fc.Pokemon {
-		dir := fmt.Sprintf("./docs/data/%v", id)
+		dir := fmt.Sprintf("./docs/data/%v", id+1)
 		os.Mkdir(dir, 0777)
 
 		file, _ := json.MarshalIndent(ft, "", " ")
